@@ -104,6 +104,11 @@ function gameLoop() {
   // hier kannst du später Collision mit dem Portal einbauen
   // if (isColliding(PLAYER.box, GAME_SCREEN.redBox, 0)) { ... }
 
+  if (PLAYER.helmetCount > 5 && PLAYER.harnischCount > 5 && PLAYER.skirtCount > 5 && PLAYER.shoesCount > 5) {
+    GAME_SCREEN.debug_output.innerHTML = `<h2>You win!</h2><p>Refresh the page to play again.</p>`;
+    return; 
+  }
+
   setTimeout(gameLoop, 1000 / GAME_CONFIG.gameSpeed);
 }
 
