@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twilight Specter</title>
+
+  <link rel="stylesheet" href="./CSS/spritegame.css" />
+
+  <script src="./JS/spritegame_detectCollisions.js" defer></script>
+  <script src="./JS/spritegame_keyevents.js" defer></script>
+  <script src="./JS/spritegame_player.js" defer></script>
+  <script src="./JS/spritegame_main.js" defer></script>
+</head>
+
+<body>
+  <div id="startMenu">
+    <h1>Twilight Specter</h1>
+    <div id="btnGrid">
+      <div id="startButton" onclick="startGame()">Start Game</div>
+      <div id="ruleButton">Rules</div>
+    </div>
+  </div>
+
+  <div id="gameGrid">
+    <div id="surface">
+      <div id="player">
+        <!-- Sprite-Sheet mit Ghost -->
+        <img id="spriteImg" src="./IMG/Ghost.png" alt="Eleven sprite" />
+      </div>
+
+      <!-- z.B. rotes Portal / Hitbox -->
+      <div id="redBox"></div>
+    </div>
+
+    <div id="dashboard">
+      <img src="./IMG/schriftrolle.png" alt="">
+      <div id="debug_output"></div>
+    </div>
+  </div>
+</body>
+
+</html>
